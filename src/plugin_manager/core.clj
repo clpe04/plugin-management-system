@@ -76,5 +76,6 @@
 (defn loaded-plugin-files
   "Finds all filenames, from which functions have been loaded into the transformation map"
   []
-  (sort (filter #(not (nil? %))
-                (map get-plugin-filename (flatten (vals @plugin-functions))))))
+  (sort (distinct
+         (filter #(not (nil? %))
+                 (map get-plugin-filename (flatten (vals @plugin-functions)))))))
