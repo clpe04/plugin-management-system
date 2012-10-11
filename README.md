@@ -149,3 +149,12 @@ so the result of this call is "20";
 
 Sets the internal hook keyword to look for when loading trasformations from plugin files, to :plugin
 
+## Acknowledgements
+
+This project is based on the ideas and initial work of [Jacob Emcken](https://github.com/jacobemcken "jacobemcken on GitHub")
+
+## License
+
+Copyright (C) 2012 Claus Petersen
+
+Distributed under the Eclipse Public License, the same as Clojure.
