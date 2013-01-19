@@ -1,19 +1,12 @@
 # Plugin Management System (PMS)
 
-A clojure plugin management system, enabling the user to dynamically load clj and jar files
-and extract functions marked as plugins and add them to a list of transformations, which
-can then be applied to data.
+A clojure plugin management system, enabling the user to dynamically load clj and 
+jar files and extract functions marked as plugins and add them to a list of 
+transformations, which can then be applied to data.
 
 ## Usage
 
-This section provides a short description of how you define a plugin function, the
-primary functions in the Plugin Management System and examples of their usage.
-
-### Defining plugin functions
-
-To mark your functions to be loaded by the Plugin Management System, all you have to do is to add
-a metadata entry, where the key is the hook keyword you will set when loading the plugins and
-the value is the name it will be associated with in the transformation map.
+This section provides some short examples of the Plugin Management System its usage.
 
 #### Example 1 - Simple usage
 
