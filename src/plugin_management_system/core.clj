@@ -1,6 +1,6 @@
-(ns plugin-manager.core
+(ns plugin-management-system.core
   (:require [bultitude.core]
-            [plugin-manager.classloader]))
+            [plugin-management-system.classloader]))
 
 (def
   #^{:dynamic true
@@ -51,7 +51,7 @@
   "Adds the specific jar file to the classpath and requires the namespaces
   in the jar file and adds the plugin functions to the plugin manager"
   [jar-file]
-  (plugin-manager.classloader/add-classpath jar-file)
+  (plugin-management-system.classloader/add-classpath jar-file)
   (doseq [namespace (#'bultitude.core/namespaces-in-jar jar-file)]
     (require namespace)
     (register-transformations

@@ -1,4 +1,4 @@
-(ns plugin-manager.classloader
+(ns plugin-management-system.classloader
   (:import (clojure.lang DynamicClassLoader)
            (java.net URL URLClassLoader))
   (:require [clojure.java.io])
