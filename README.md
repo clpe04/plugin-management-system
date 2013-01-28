@@ -4,6 +4,9 @@ A clojure plugin management system, enabling the user to dynamically load clj an
 jar files and extract functions marked as plugins and add them to a list of 
 transformations, which can then be applied to data.
 
+## The project have moved ##
+This project have been moved to a new project called "Hookin"
+
 ## Usage
 
 This section provides some short examples of the Plugin Management System its usage.
@@ -29,7 +32,7 @@ management system under the hook :add-10 and then applied to the number 15 for a
     (ns test-plugin.core)
 
     (defn
-      #^{:plugin :multiply-by-2}
+      #^{:hook :multiply-by-2}
       test-function
       [data]
       (* data 2))
